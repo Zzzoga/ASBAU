@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>ASBAU</title>
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/aos/aos.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+
+	<header class="header">	
+		<div class="header__top">
+            <div class="container">
+                <a href="/" class="logo">ASBAU</a>
+                <form action="#" class="search">
+                    <input type="search" name="search" placeholder="Поиск по сайту" class="search__input">
+                    <input type="submit" value="" class="search__btn">
+                </form>
+                <div class="header__contacts">
+                    <a href="tel:+7 (495) 772-00-11" class="call">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.9802 14.3111C16.6554 14.1207 16.2562 14.1247 15.933 14.3167L14.2962 15.2919C13.9298 15.5103 13.4722 15.4847 13.1362 15.2223C12.5554 14.7687 11.6202 14.0055 10.8066 13.1919C9.993 12.3783 9.2298 11.4431 8.7762 10.8623C8.5138 10.5263 8.4882 10.0687 8.7066 9.70233L9.6818 8.06553C9.8746 7.74233 9.8762 7.33993 9.6858 7.01513L7.2842 2.91273C7.0514 2.51593 6.589 2.32073 6.1418 2.43033C5.7074 2.53593 5.1434 2.79353 4.5522 3.38553C2.701 5.23673 1.7178 8.35913 8.6794 15.3207C15.641 22.2823 18.7626 21.2999 20.6146 19.4479C21.2074 18.8551 21.4642 18.2903 21.5706 17.8551C21.6786 17.4087 21.4866 16.9495 21.0906 16.7175C20.1018 16.1391 17.969 14.8903 16.9802 14.3111Z" fill="#D52D2D"/>
+                        </svg>   
+                        +7 (495) 772-00-11                         
+                    </a>
+
+                    <div class="soc">
+                        <a href="#" class="soc__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0415 12.9795C20.2768 12.5264 21.1303 11.2442 21.771 10.2803C23.646 7.46192 24 6.86133 24 6.50001C24 6.22364 23.7763 6.00001 23.5 6.00001H19C18.7578 6.00001 18.5507 6.17286 18.5078 6.41114C18.2602 7.78712 15.0131 11.752 14.5 12C14.2905 12 14 11.4785 14 10.5V6.50001L14.0034 6.28028C14.0107 5.95508 14.018 5.61817 13.7597 5.35352C13.4311 5.01758 12.9223 5 11.5 5C8.91938 5 7.99995 5.77441 7.99995 6.5C7.99995 6.77637 8.1772 6.99219 8.45356 6.99219C8.45893 6.99512 8.99995 7.35645 8.99995 9.5C8.99995 10.0801 8.99995 11.541 8.86518 11.9883C7.60151 11.7705 5.84467 8.59668 4.96625 6.32031C4.89203 6.12695 4.70648 6 4.49994 6H0.499938C0.351498 6 0.210878 6.06543 0.116148 6.17969C0.0209379 6.29395 -0.0186221 6.44434 0.00823786 6.58985C0.560488 9.61133 6.91254 19 10.9999 19H12.9999C14.0595 19 14.1425 17.8516 14.1977 17.0908C14.2499 16.3672 14.3115 16 14.4999 16C15.1206 16 16.3852 17.0977 17.2221 17.8242C18.1611 18.6397 18.5932 19 18.9999 19H21.4999C22.7856 19 23.9999 19 23.9999 18C23.9999 17.6192 23.6674 17.1758 21.7748 15.0322C21.1396 14.3135 20.2949 13.3565 20.0415 12.9795Z" fill="#D52D2D"/>
+                            </svg>                                                             
+                        </a>
+                        <a href="#" class="soc__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0415 12.9795C20.2768 12.5264 21.1303 11.2442 21.771 10.2803C23.646 7.46192 24 6.86133 24 6.50001C24 6.22364 23.7763 6.00001 23.5 6.00001H19C18.7578 6.00001 18.5507 6.17286 18.5078 6.41114C18.2602 7.78712 15.0131 11.752 14.5 12C14.2905 12 14 11.4785 14 10.5V6.50001L14.0034 6.28028C14.0107 5.95508 14.018 5.61817 13.7597 5.35352C13.4311 5.01758 12.9223 5 11.5 5C8.91938 5 7.99995 5.77441 7.99995 6.5C7.99995 6.77637 8.1772 6.99219 8.45356 6.99219C8.45893 6.99512 8.99995 7.35645 8.99995 9.5C8.99995 10.0801 8.99995 11.541 8.86518 11.9883C7.60151 11.7705 5.84467 8.59668 4.96625 6.32031C4.89203 6.12695 4.70648 6 4.49994 6H0.499938C0.351498 6 0.210878 6.06543 0.116148 6.17969C0.0209379 6.29395 -0.0186221 6.44434 0.00823786 6.58985C0.560488 9.61133 6.91254 19 10.9999 19H12.9999C14.0595 19 14.1425 17.8516 14.1977 17.0908C14.2499 16.3672 14.3115 16 14.4999 16C15.1206 16 16.3852 17.0977 17.2221 17.8242C18.1611 18.6397 18.5932 19 18.9999 19H21.4999C22.7856 19 23.9999 19 23.9999 18C23.9999 17.6192 23.6674 17.1758 21.7748 15.0322C21.1396 14.3135 20.2949 13.3565 20.0415 12.9795Z" fill="#D52D2D"/>
+                            </svg>                                                             
+                        </a>
+                        <a href="#" class="soc__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0415 12.9795C20.2768 12.5264 21.1303 11.2442 21.771 10.2803C23.646 7.46192 24 6.86133 24 6.50001C24 6.22364 23.7763 6.00001 23.5 6.00001H19C18.7578 6.00001 18.5507 6.17286 18.5078 6.41114C18.2602 7.78712 15.0131 11.752 14.5 12C14.2905 12 14 11.4785 14 10.5V6.50001L14.0034 6.28028C14.0107 5.95508 14.018 5.61817 13.7597 5.35352C13.4311 5.01758 12.9223 5 11.5 5C8.91938 5 7.99995 5.77441 7.99995 6.5C7.99995 6.77637 8.1772 6.99219 8.45356 6.99219C8.45893 6.99512 8.99995 7.35645 8.99995 9.5C8.99995 10.0801 8.99995 11.541 8.86518 11.9883C7.60151 11.7705 5.84467 8.59668 4.96625 6.32031C4.89203 6.12695 4.70648 6 4.49994 6H0.499938C0.351498 6 0.210878 6.06543 0.116148 6.17969C0.0209379 6.29395 -0.0186221 6.44434 0.00823786 6.58985C0.560488 9.61133 6.91254 19 10.9999 19H12.9999C14.0595 19 14.1425 17.8516 14.1977 17.0908C14.2499 16.3672 14.3115 16 14.4999 16C15.1206 16 16.3852 17.0977 17.2221 17.8242C18.1611 18.6397 18.5932 19 18.9999 19H21.4999C22.7856 19 23.9999 19 23.9999 18C23.9999 17.6192 23.6674 17.1758 21.7748 15.0322C21.1396 14.3135 20.2949 13.3565 20.0415 12.9795Z" fill="#D52D2D"/>
+                            </svg>                                                               
+                        </a>
+                    </div>
+
+                    <a href="#" class="btn header__btn">Заказать звонок</a>
+                </div>
+				<div class="burger">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="container">
+                <nav class="menu__nav">
+					<ul>
+						<li>
+                            <a href="#" class="menu__nav__link">
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="2" fill="white"/>
+                                    <rect y="6" width="20" height="2" fill="white"/>
+                                    <rect y="12" width="20" height="2" fill="white"/>
+                                </svg>                                    
+                                Каталог
+                            </a>
+                        </li>
+						<li>
+                            <a href="#" class="menu__nav__link">Готовые решения</a>
+                        </li>
+						<li>
+                            <a href="#" class="menu__nav__link">Портфолио</a>
+                        </li>
+						<li>
+                            <a href="#" class="menu__nav__link">Актуальное</a>
+                        </li>
+						<li>
+                            <a href="#" class="menu__nav__link">О компании</a>
+                        </li>
+						<li>
+                            <a href="#" class="menu__nav__link">Контакты</a>
+                        </li>
+					</ul>
+				</nav>
+            </div>
+        </div>
+	</header>
+
+	<main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><span>Решения</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="solution">
+            <div class="container">
+                <div class="section__header">
+                    <h1 class="page__title">Решения</h1>
+                </div>
+
+                <div class="section__content">
+                    <div class="solution__grid">
+                        <div class="solution__grid__item">
+                            <div class="solution__grid__media">
+                                <img src="img/sol.png" alt="">
+                                <p class="solution__grid__item__cat">Для жилых и зданий социальной сферы</p>
+                            </div>
+                            <div class="solution__grid__cats">
+                                <a href="#" class="solution__grid__cat">Крыши</a>
+                                <a href="#" class="solution__grid__cat">Фасады</a>
+                                <a href="#" class="solution__grid__cat">Полы</a>
+                                <a href="#" class="solution__grid__cat">Фундаменты</a>
+                                <a href="#" class="solution__grid__cat">Огнезащита</a>
+                                <a href="#" class="solution__grid__cat">Техническая изоляция</a>
+                            </div>
+                        </div>
+                        
+                        <div class="solution__grid__item">
+                            <div class="solution__grid__media">
+                                <img src="img/sol.png" alt="">
+                                <p class="solution__grid__item__cat">Для жилых и зданий социальной сферы</p>
+                            </div>
+                            <div class="solution__grid__cats">
+                                <a href="#" class="solution__grid__cat">Крыши</a>
+                                <a href="#" class="solution__grid__cat">Фасады</a>
+                                <a href="#" class="solution__grid__cat">Полы</a>
+                                <a href="#" class="solution__grid__cat">Фундаменты</a>
+                                <a href="#" class="solution__grid__cat">Огнезащита</a>
+                                <a href="#" class="solution__grid__cat">Техническая изоляция</a>
+                            </div>
+                        </div>
+
+                        <div class="solution__grid__item">
+                            <div class="solution__grid__media">
+                                <img src="img/sol.png" alt="">
+                                <p class="solution__grid__item__cat">Для жилых и зданий социальной сферы</p>
+                            </div>
+                            <div class="solution__grid__cats">
+                                <a href="#" class="solution__grid__cat">Крыши</a>
+                                <a href="#" class="solution__grid__cat">Фасады</a>
+                                <a href="#" class="solution__grid__cat">Полы</a>
+                                <a href="#" class="solution__grid__cat">Фундаменты</a>
+                                <a href="#" class="solution__grid__cat">Огнезащита</a>
+                                <a href="#" class="solution__grid__cat">Техническая изоляция</a>
+                            </div>
+                        </div>
+
+                        <div class="solution__grid__item">
+                            <div class="solution__grid__media">
+                                <img src="img/sol.png" alt="">
+                                <p class="solution__grid__item__cat">Для жилых и зданий социальной сферы</p>
+                            </div>
+                            <div class="solution__grid__cats">
+                                <a href="#" class="solution__grid__cat">Крыши</a>
+                                <a href="#" class="solution__grid__cat">Фасады</a>
+                                <a href="#" class="solution__grid__cat">Полы</a>
+                                <a href="#" class="solution__grid__cat">Фундаменты</a>
+                                <a href="#" class="solution__grid__cat">Огнезащита</a>
+                                <a href="#" class="solution__grid__cat">Техническая изоляция</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<section class="map">
+			<div class="map__container" id="map"></div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="footer__left">
+					<p class="footer__logo">ASBAU</p>	
+					<div class="footer__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.</div>				
+				</div>
+
+				<div class="footer__right">
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="#" class="footer__nav__link big__link">О компании</a></li>
+							<li><a href="#" class="footer__nav__link">Сертификаты и лицензии</a></li>
+							<li><a href="#" class="footer__nav__link">Вакансии</a></li>
+							<li><a href="#" class="footer__nav__link">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="#" class="footer__nav__link big__link">Направления</a></li>
+							<li><a href="#" class="footer__nav__link">Каменная вата Технониколь</a></li>
+							<li><a href="#" class="footer__nav__link">Каменная вата Технониколь</a></li>
+							<li><a href="#" class="footer__nav__link">Каменная вата Технониколь</a></li>
+							<li><a href="#" class="footer__nav__link all__link">Посмотреть все</a></li>
+						</ul>
+					</nav>
+
+					<nav class="footer__nav">
+						<ul>
+							<li><a href="#" class="footer__nav__link big__link">Каталог</a></li>
+							<li><a href="#" class="footer__nav__link big__link">Решения</a></li>
+							<li><a href="#" class="footer__nav__link big__link">Объекты</a></li>
+							<li><a href="#" class="footer__nav__link big__link">Актуальное</a></li>
+							<li><a href="#" class="footer__nav__link big__link">Новости</a></li>
+						</ul>
+					</nav>
+
+					<div class="footer__contacts">
+						<p class="footer__title">Контакты</p>
+						<div class="footer__contacts__item">
+							<span class="contact__param">Телефон</span>
+							<a href="tel:+7 (495) 772-00-11">+7 (495) 772-00-11</a>
+						</div>
+						<div class="footer__contacts__item">
+							<span class="contact__param">Email</span>
+							<a href="mailto:sales@asbau.pro">sales@asbau.pro</a>
+						</div>
+						<a href="#" class="btn">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<p class="copy">© «АСБАУ», 2011—2025. Все права защищены.</p>
+				<a href="#" class="politics">Политика конфедициальности</a>
+			</div>
+		</div>
+	</footer>
+    
+    <div class="modal modal__call">
+		<div class="modal__overlay"></div>
+		<div class="modal__wrapper">
+			<div class="modal__close">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+					<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M7.71875,6.28125l-1.4375,1.4375l17.28125,17.28125l-17.28125,17.28125l1.4375,1.4375l17.28125,-17.28125l17.28125,17.28125l1.4375,-1.4375l-17.28125,-17.28125l17.28125,-17.28125l-1.4375,-1.4375l-17.28125,17.28125z"></path></g></g>
+				</svg>
+			</div>
+
+			<h3 class="modal__title">Оставьте заявку</h3>
+			<p class="modal__text">Наши специалисты свяжутся с вами в ближайшее время</p>
+			<p class="error__text visible">Заполните все поля</p>
+			<form action="#" class="modal__form">
+				<input type="text" class="input" name="name" placeholder="Ваше имя">
+				<input type="tel" class="input" name="phone" placeholder="Ваш телефон">
+				<input type="submit" value="Отправить" class="btn modal__btn">
+				<p>Отправляя заявку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal modal__nav">
+		<div class="modal__nav__wrapper">
+			<nav class="menu__nav">
+				<ul>
+					<li>
+						<a href="#" class="menu__nav__link">
+							<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="20" height="2" fill="white"/>
+								<rect y="6" width="20" height="2" fill="white"/>
+								<rect y="12" width="20" height="2" fill="white"/>
+							</svg>                                    
+							Каталог
+						</a>
+					</li>
+					<li>
+						<a href="#" class="menu__nav__link">Готовые решения</a>
+					</li>
+					<li>
+						<a href="#" class="menu__nav__link">Портфолио</a>
+					</li>
+					<li>
+						<a href="#" class="menu__nav__link">Актуальное</a>
+					</li>
+					<li>
+						<a href="#" class="menu__nav__link">О компании</a>
+					</li>
+					<li>
+						<a href="#" class="menu__nav__link">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__contacts">
+				<a href="tel:+7 (495) 772-00-11" class="call">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.9802 14.3111C16.6554 14.1207 16.2562 14.1247 15.933 14.3167L14.2962 15.2919C13.9298 15.5103 13.4722 15.4847 13.1362 15.2223C12.5554 14.7687 11.6202 14.0055 10.8066 13.1919C9.993 12.3783 9.2298 11.4431 8.7762 10.8623C8.5138 10.5263 8.4882 10.0687 8.7066 9.70233L9.6818 8.06553C9.8746 7.74233 9.8762 7.33993 9.6858 7.01513L7.2842 2.91273C7.0514 2.51593 6.589 2.32073 6.1418 2.43033C5.7074 2.53593 5.1434 2.79353 4.5522 3.38553C2.701 5.23673 1.7178 8.35913 8.6794 15.3207C15.641 22.2823 18.7626 21.2999 20.6146 19.4479C21.2074 18.8551 21.4642 18.2903 21.5706 17.8551C21.6786 17.4087 21.4866 16.9495 21.0906 16.7175C20.1018 16.1391 17.969 14.8903 16.9802 14.3111Z" fill="#D52D2D"/>
+					</svg>   
+					+7 (495) 772-00-11                         
+				</a>
+
+				<div class="soc">
+					<a href="#" class="soc__link">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.0415 12.9795C20.2768 12.5264 21.1303 11.2442 21.771 10.2803C23.646 7.46192 24 6.86133 24 6.50001C24 6.22364 23.7763 6.00001 23.5 6.00001H19C18.7578 6.00001 18.5507 6.17286 18.5078 6.41114C18.2602 7.78712 15.0131 11.752 14.5 12C14.2905 12 14 11.4785 14 10.5V6.50001L14.0034 6.28028C14.0107 5.95508 14.018 5.61817 13.7597 5.35352C13.4311 5.01758 12.9223 5 11.5 5C8.91938 5 7.99995 5.77441 7.99995 6.5C7.99995 6.77637 8.1772 6.99219 8.45356 6.99219C8.45893 6.99512 8.99995 7.35645 8.99995 9.5C8.99995 10.0801 8.99995 11.541 8.86518 11.9883C7.60151 11.7705 5.84467 8.59668 4.96625 6.32031C4.89203 6.12695 4.70648 6 4.49994 6H0.499938C0.351498 6 0.210878 6.06543 0.116148 6.17969C0.0209379 6.29395 -0.0186221 6.44434 0.00823786 6.58985C0.560488 9.61133 6.91254 19 10.9999 19H12.9999C14.0595 19 14.1425 17.8516 14.1977 17.0908C14.2499 16.3672 14.3115 16 14.4999 16C15.1206 16 16.3852 17.0977 17.2221 17.8242C18.1611 18.6397 18.5932 19 18.9999 19H21.4999C22.7856 19 23.9999 19 23.9999 18C23.9999 17.6192 23.6674 17.1758 21.7748 15.0322C21.1396 14.3135 20.2949 13.3565 20.0415 12.9795Z" fill="#D52D2D"/>
+						</svg>                                                             
+					</a>
+					<a href="#" class="soc__link">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.0415 12.9795C20.2768 12.5264 21.1303 11.2442 21.771 10.2803C23.646 7.46192 24 6.86133 24 6.50001C24 6.22364 23.7763 6.00001 23.5 6.00001H19C18.7578 6.00001 18.5507 6.17286 18.5078 6.41114C18.2602 7.78712 15.0131 11.752 14.5 12C14.2905 12 14 11.4785 14 10.5V6.50001L14.0034 6.28028C14.0107 5.95508 14.018 5.61817 13.7597 5.35352C13.4311 5.01758 12.9223 5 11.5 5C8.91938 5 7.99995 5.77441 7.99995 6.5C7.99995 6.77637 8.1772 6.99219 8.45356 6.99219C8.45893 6.99512 8.99995 7.35645 8.99995 9.5C8.99995 10.0801 8.99995 11.541 8.86518 11.9883C7.60151 11.7705 5.84467 8.59668 4.96625 6.32031C4.89203 6.12695 4.70648 6 4.49994 6H0.499938C0.351498 6 0.210878 6.06543 0.116148 6.17969C0.0209379 6.29395 -0.0186221 6.44434 0.00823786 6.58985C0.560488 9.61133 6.91254 19 10.9999 19H12.9999C14.0595 19 14.1425 17.8516 14.1977 17.0908C14.2499 16.3672 14.3115 16 14.4999 16C15.1206 16 16.3852 17.0977 17.2221 17.8242C18.1611 18.6397 18.5932 19 18.9999 19H21.4999C22.7856 19 23.9999 19 23.9999 18C23.9999 17.6192 23.6674 17.1758 21.7748 15.0322C21.1396 14.3135 20.2949 13.3565 20.0415 12.9795Z" fill="#D52D2D"/>
+						</svg>                                                             
+					</a>
+					<a href="#" class="soc__link">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.0415 12.9795C20.2768 12.5264 21.1303 11.2442 21.771 10.2803C23.646 7.46192 24 6.86133 24 6.50001C24 6.22364 23.7763 6.00001 23.5 6.00001H19C18.7578 6.00001 18.5507 6.17286 18.5078 6.41114C18.2602 7.78712 15.0131 11.752 14.5 12C14.2905 12 14 11.4785 14 10.5V6.50001L14.0034 6.28028C14.0107 5.95508 14.018 5.61817 13.7597 5.35352C13.4311 5.01758 12.9223 5 11.5 5C8.91938 5 7.99995 5.77441 7.99995 6.5C7.99995 6.77637 8.1772 6.99219 8.45356 6.99219C8.45893 6.99512 8.99995 7.35645 8.99995 9.5C8.99995 10.0801 8.99995 11.541 8.86518 11.9883C7.60151 11.7705 5.84467 8.59668 4.96625 6.32031C4.89203 6.12695 4.70648 6 4.49994 6H0.499938C0.351498 6 0.210878 6.06543 0.116148 6.17969C0.0209379 6.29395 -0.0186221 6.44434 0.00823786 6.58985C0.560488 9.61133 6.91254 19 10.9999 19H12.9999C14.0595 19 14.1425 17.8516 14.1977 17.0908C14.2499 16.3672 14.3115 16 14.4999 16C15.1206 16 16.3852 17.0977 17.2221 17.8242C18.1611 18.6397 18.5932 19 18.9999 19H21.4999C22.7856 19 23.9999 19 23.9999 18C23.9999 17.6192 23.6674 17.1758 21.7748 15.0322C21.1396 14.3135 20.2949 13.3565 20.0415 12.9795Z" fill="#D52D2D"/>
+						</svg>                                                               
+					</a>
+				</div>
+
+				<a href="#" class="btn header__btn">Заказать звонок</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/aos/aos.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0fe82a33-1e6e-4e85-8627-3e73d77faf16" type="text/javascript"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/smoothScroll/SmoothScroll.min.js"></script>
+	<script>
+		SmoothScroll({
+			animationTime    : 800,
+			stepSize         : 75,
+	
+			
+			accelerationDelta : 30,  
+			accelerationMax   : 2,   
+	
+	
+			keyboardSupport   : true,  
+			arrowScroll       : 50,
+	
+	
+			pulseAlgorithm   : true,
+			pulseScale       : 4,
+			pulseNormalize   : 1,
+	
+			touchpadSupport   : true,
+		})
+	</script>
+	<script src="js/init.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/map.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<script>
+		async function submitForm(event) {
+			event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
+			if (event.target.querySelector('input[name="name"]').value == '' || event.target.querySelector('input[name="phone"]').value == '') {
+				event.target.closest('.form__container').querySelector('.error__text').classList.add('visible')
+				event.target.querySelector('input[name="name"]').classList.add('error')
+				event.target.querySelector('input[name="phone"]').classList.add('error')
+			} else {
+				event.target.closest('.form__container').querySelector('.error__text').classList.remove('visible')
+				event.target.querySelector('input[name="name"]').classList.remove('error')
+				event.target.querySelector('input[name="phone"]').classList.remove('error')
+
+				setTimeout(() => {
+					event.target.closest('.form__container').querySelector('.sended').classList.add('active')
+					event.target.reset()
+					setTimeout(() => {
+						event.target.closest('.form__container').querySelector('.sended').classList.remove('active')
+					}, 5000)
+				}, 1000)
+				
+				
+			}
+		}
+	</script>
+</body>
+</html>
