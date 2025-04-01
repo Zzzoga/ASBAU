@@ -155,9 +155,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	showModal('.company__info .btn', '.modal__call')
 	showModal('.footer__contacts .btn', '.modal__call')
 	showModal('.content__right .btn', '.modal__call')
+	showModal('.banner__slider__btn', '.modal__call')
 	showModal('button.btn.cart__btn', '.modal__call')
 	showModal('button.btn.kp__btn', '.modal__call')
-	
+
 	hideModal('.modal__call .modal__close', '.modal__call')
 	hideModal('.modal__call .modal__overlay', '.modal__call')
 
